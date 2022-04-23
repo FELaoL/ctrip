@@ -1,0 +1,267 @@
+body {
+	max-width: 540px;
+	min-width: 320px;
+	margin: 0 auto;
+	font: normal 14px/1.5 Tahoma, "Lucida Grande", Verdana, "Microsoft Yahei", STXihei, hei;
+	color: #000;
+	background: #f2f2f2;
+	overflow-x: hidden;
+	-webkit-tap-highlight-color: transparent;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #222;
+}
+
+div {
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: "iconfont"; /* Project id  */
+	src: url("./../font_g1sdi7di2l/iconfont.ttf?t=1649144889315") format("truetype");
+}
+
+/* 搜索模块 */
+.search-index {
+	/* 固定定位跟父级没有关系，它以屏幕为准 */
+	position: fixed;
+	top: 0;
+	left: 50%;
+	/* 固定的盒子应该有宽度 */
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	width: 100%;
+	min-width: 320px;
+	max-width: 540px;
+	background-color: #fff;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.search {
+	margin: 12px 12px 6px;
+	height: 32px;
+	border: 1.8px solid #0086f6;
+	border-radius: 16px;
+	color: #999;
+	font-size: 15px;
+	line-height: 23px;
+	flex: 1;
+}
+
+.search::before {
+	content: "\e7b3";
+	font-family: "iconfont";
+	width: 20px;
+	height: 32px;
+	font-size: 20px;
+	margin-left: 12px;
+	margin-right: 6px;
+}
+
+/* 局部导航栏 */
+.local-nav {
+	padding-top: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	padding: 56px 12px 2px;
+}
+
+.local-nav ul {
+	display: flex;
+}
+
+.local-nav li {
+	flex: 1;
+	width: 58px;
+}
+
+.local-nav li a {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 12px;
+	color: #000;
+	line-height: 15px;
+	text-align: center;
+	width: 100%;
+	height: 58px;
+}
+
+.local-nav .icon {
+	width: 28px;
+	height: 28px;
+	margin-bottom: 4px;
+	background-size: 28px auto;
+	background-image: url(./../images/mainnav.png);
+	background-repeat: no-repeat;
+}
+
+.icon-1 {
+	background-position: 0 -84px;
+}
+
+.icon-2 {
+	background-position: 0 -168px;
+}
+
+.icon-3 {
+	background-position: 0 -364px;
+}
+
+.icon-4 {
+	background-position: 0 -140px;
+}
+
+.icon-5 {
+	background-position: 0 -28px;
+}
+
+.icon-6 {
+	background-position: 0 -336px;
+}
+
+.icon-7 {
+	background-position: 0 -56px;
+}
+
+.icon-8 {
+	background-position: 0 -224px;
+}
+
+.icon-9 {
+	background-position: 0 -196px;
+}
+
+.icon-10 {
+	background-position: 0 -112px;
+}
+
+.icon-11 {
+	background-position: 0 0;
+}
+
+.icon-12 {
+	background-position: 0 -280px;
+}
+
+.icon-13 {
+	background-position: 0 -252px;
+}
+
+.icon-14 {
+	background-position: 0 -392px;
+}
+
+.icon-15 {
+	background-position: 0 -308px;
+}
+
+.local-nav ul:nth-child(1) li:nth-child(1) {
+	border-top-left-radius: 8px;
+	background-image: linear-gradient(180deg, #fa5956, #fb8650);
+}
+
+.local-nav ul:nth-child(1) li:nth-child(2) {
+	background-image: linear-gradient(180deg, #3c83fa, #50b2fa);
+}
+
+.local-nav ul:nth-child(1) li:nth-child(3) {
+	background-image: linear-gradient(0deg, #66a4ff, #5e80ff);
+}
+
+.local-nav ul:nth-child(1) li:nth-child(4) {
+	background-image: linear-gradient(180deg, #2fc3b6, #52d9b3);
+}
+
+.local-nav ul:nth-child(1) li:nth-child(5) {
+	border-top-right-radius: 8px;
+	background-image: linear-gradient(0deg, #ffa846, #ff8939 99%);
+}
+
+.local-nav ul:nth-child(2) li:nth-child(1),
+.local-nav ul:nth-child(3) li:nth-child(1) {
+	background-color: #fff5f1;
+}
+
+.local-nav ul:nth-child(2) li:nth-child(2),
+.local-nav ul:nth-child(3) li:nth-child(2) {
+	background-color: #eff9ff;
+}
+
+.local-nav ul:nth-child(2) li:nth-child(3),
+.local-nav ul:nth-child(3) li:nth-child(3) {
+	background-color: #f2f5ff;
+}
+
+.local-nav ul:nth-child(2) li:nth-child(4),
+.local-nav ul:nth-child(3) li:nth-child(4) {
+	background-color: #ecfcf8;
+}
+
+.local-nav ul:nth-child(2) li:nth-child(5),
+.local-nav ul:nth-child(3) li:nth-child(5) {
+	background-color: #fff9f2;
+}
+
+.local-nav ul:nth-child(1) li a span {
+	color: #fff !important;
+}
+
+/* 中部 */
+.sub-banner {
+	margin: 0 12px 12px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.banner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+	padding: 8px;
+	width: 179px;
+}
+
+.banner > img {
+	width: 100%;
+	height: auto;
+}
+
+.banner > div {
+	flex: 1;
+}
+
+.banner > div > img {
+	width: 100%;
+	height: auto;
+	padding: 6px;
+}
+
+/* 底部占位图 */
+.ad-banner-wrap {
+	margin-top: 10px;
+	padding: 0 12px 12px;
+	overflow: hidden;
+	border-radius: 8px;
+}
+
+.ad-banner-wrap img {
+	width: 100%;
+	height: 88px;
+	border-radius: 8px;
+}
